@@ -17,3 +17,13 @@ In this case, we set it to `$HOME/opt/miniconda3/envs/py3-env/bin/python` corres
 a conda environment we created which has `twilio` python library installed.
 
 Run the script as follows: `./run_script.sh`. This should send SMS to the number specified above.
+
+
+## Python API server for sending SMS
+
+The code for api server is in `api/backend.py`. It also has a `requirements.txt` file which has
+all python dependencies needed by the server. Further all env variables are taken 
+from the local`.env` file automatically when we run `vercel dev` locally. 
+
+For preview and production deployments, these environment variables must be set on vercel.com.
+
